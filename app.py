@@ -18,7 +18,7 @@ def index():
         print(symbol)
         
         # Make API CALL with the symbol
-        datum = requests.get('https://fmpcloud.io/api/v3/quote/'+symbol+'?apikey=0309e3df09a057304b886039ea7afabb')
+        datum = requests.get('https://fmpcloud.io/api/v3/quote/'+symbol+'?apikey=APIKEY')
         #print("------------",type(datum),"------1----------")
         data = json.loads(datum.text)
         print(data)
